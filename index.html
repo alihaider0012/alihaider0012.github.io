@@ -1,0 +1,115 @@
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<!DOCTYPE html>
+<html>
+
+	<head><title>Portfolio PAGE</title></head>
+    <body>
+
+		<h1 align="center" class= "well col-md-4 col-md-offset-4">Welcome to Ali's Page</h1>
+	</body>
+    
+     <style>
+    	h1{
+			font-family: "Diavlo","Ariel Black",sens-serif;
+		}
+    </style>
+
+	<script> 
+		$(document).ready(function(){
+    		$("#flip").click(function(){
+        		$("#panel").slideToggle("slow");
+    		});
+		});
+		
+		$(document).ready(function(){
+    		$("#flip1").click(function(){
+        		$("#panel1").slideToggle("slow");
+    		});
+		});
+	</script>
+
+	<style> 
+		#panel, #flip,#panel1, #flip1 {
+    		padding: 5px;
+    		text-align: center;
+		}
+
+		#panel,#panel1 {
+    		padding: 50px;
+    		display: none;
+		}
+		
+		img {
+			border-radius: 50%;
+		}
+	</style>
+
+	<body>
+ 
+		<div id="flip" class="btn btn-sm btn-primary active col-md-4 col-md-offset-4">View Portfolio!</div>
+		<br><br><br><br><br><br><br><br>
+		
+		<div id="panel" class="panel">
+        	<div class="well col-md-6 col-md-offset-3 ">
+            	<img src="dp.jpg" alt="Avatar" style="width:200px">
+				<h3>Full Name: <strong>Ali Haider</strong></h3>
+				<h3>Father Name: <strong>Shakeel Abbas</strong></h3>
+            	<h3>Address: <strong>R-Block Model Town</strong></h3>
+                
+				<h3>Educational Qualifications</h3>
+				<table border="1" class ="table table-stripped">
+                <tr >
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>O Levels</td>
+                    <td>Hamdard Public School</td>
+                    <td>86.0%</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>A Levels</td>
+                    <td>National Grammer School</</td>
+                    <td>84.9%</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>BSCS</td>
+                    <td>FAST NU</td>
+                    <td>A Grade</td>
+                    <td>2016-Present</td>
+                </tr>
+               
+               
+            </table>
+				
+				<h3 id="flip1" class="btn btn-xs btn-success active col-md-4 col-md-offset-4">View a Joke!</h3>
+				<br><br><br>
+				<div id="panel1" class="panel1">
+					A user interface is like a joke. If you have to explain it, its not that good.
+					<footer><small><strong>(It's not that funny though. xD)</strong></small></footer>
+				</div>
+				
+			
+            </div>
+        </div>
+		
+	</body>
+</html>
+
+
+
